@@ -29,4 +29,3 @@ Each module should expose, a method named `add{ingredient}` (e.g. `addMeat` or `
 
 You should also create an additional JavaScript file that handles interacting with the form elements and determining which method should be called.
 
-> D
