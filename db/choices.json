@@ -1,0 +1,9 @@
+{
+    "choices": [
+      {"white": 0.09, "wheat": 0.50},
+      {"chedar": 0.60, "bleu": 0.10},
+      {"mayo": 0.220, "mustard": 0.40},
+      {"tomato": 0.80, "lettus": 0.50},
+      {"chicken": 0.20, "ham": 0.90}
+    ]
+}
