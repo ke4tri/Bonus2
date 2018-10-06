@@ -1,5 +1,5 @@
 # Bonus2
-
+Create a sandwich order form that allows the user to select all the ingredients for a custom deli sandwich.
 
 ## Screen Shott
 
@@ -7,7 +7,7 @@
 
 ## Requirements
 
-Create a sandwich order form that allows the user to select all the ingredients for a custom deli sandwich. Each of the following should be separate modules:
+Each of the following should be separate modules:
 
 + bread
 + meat
