@@ -1,7 +1,7 @@
 # Bonus2
 Create a sandwich order form that allows the user to select all the ingredients for a custom deli sandwich.
 
-## Screen Shott
+## Screen Shot
 
 ![Screen Shot](https://github.com/ke4tri/Bonus2/blob/master/Sandwhich.JPG)
 
