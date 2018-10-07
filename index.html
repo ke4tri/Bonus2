@@ -9,14 +9,103 @@
     <title>Sandwhich Maker</title>
 </head>
 <body>
-    <h1>Test</h1>
-    <div class="printSandAndPrice"></div>
+    <div>
+        <h1 class="text-center">Sandwhich Maker</h1>
+    </div>
+<!-- Dom Print -->
+    <div id="printSandAndPrice"></div>
+    <div id="printMenu"></div>
+   
+    <div class="wrapping d-flex justify-content-between ml-5 mr-5">
+         <div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title">BREAD</h5>
+            <p class="card-text">Choose One</p>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="checkbox" id="customRadio1" value="`${amount of}`" name="customRadio1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1">White $.09</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="checkbox" id="customRadio2" name="customRadio2" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2">Wheat $.50</label>
+            </div>
+        </div>
 
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title">CHEESE</h5>
+            <p class="card-text">*More that one slice is additional cost</p>
+            </div>
 
+            <div class="custom-control custom-radio">
+                <input type="checkbox" id="customRadio3" name="customRadio3" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio3">Cheddar $.60</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="checkbox" id="customRadio4" name="customRadio4" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio4">Bleu $.10</label>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title">CONDIMENT</h5>
+            <p class="card-text">*More than one is additional cost</p>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="checkbox" id="customRadio5" name="customRadio5" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio5">Mayo $.22</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="checkbox" id="customRadio6" name="customRadio6" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio6">Mustard $.40</label>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title">VEGGIES</h5>
+            <p class="card-text">*More than one is additional cost</p>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="checkbox" id="customRadio7" name="customRadio7" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio7">Tomato $.80</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="checkbox" id="customRadio8" name="customRadio8" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio8">Lettus $.50</label>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title">MEAT</h5>
+            <p class="card-text">*More than one is additional cost</p>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="checkbox" id="customRadio9" name="customRadio9" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio9">Chicken $.20</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="checkbox" id="customRadio10" name="customRadio10" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio10">Ham $.90</label>
+            </div>
+        </div>
+
+    </div> 
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
+ 
+    <script src="/Javascripts/Components/bread.js" type="module"></script>
+    <script src="/Javascripts/Components/chesse.js" type="module"></script>
+    <script src="/Javascripts/Components/condiments.js" type="module"></script>
+    <script src="/Javascripts/Components/meat.js" type="module"></script>
+    <script src="/Javascripts/Components/veggies.js" type="module"></script>
+    <script src="/Javascripts/Components/sandComponents.js" type="module"></script>
+    <script src="/Javascripts/Helpers/util.js" type="module"></script>
     <script src="/Javascripts/Data/data.js" type="module"></script>
     <script src="/Javascripts/Components/sandComponents.js" type="module"></script>
     <script src="/Javascripts/main.js" type="module"></script>

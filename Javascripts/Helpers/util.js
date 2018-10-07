@@ -1,6 +1,16 @@
-const printToDom = (stringToPrint) => {
-    const selectedDiv = document.getElementById("pets");
-    selectedDiv.innerHTML = stringToPrint;
+const printToDom = (stringToPrint, divId) => {
+    const selectedDiv = document.getElementById(divId);
+    selectedDiv.innerHTML += stringToPrint;
 };
 
-export {printToDom};
+const add = (n1, n2) => {
+    return n1 + n2;
+};
+
+const subtract = (n1, n2) => {
+    return n1 - n2;
+};
+
+ 
+
+export {printToDom, add, subtract};
