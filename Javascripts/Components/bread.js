@@ -1,9 +1,6 @@
-import {add} from '../Helpers/util.js';
 import {choices, totalCost} from '../Components/sandComponents.js'
 
-let changeCost =(cost) => {
-    console.log(totalCost);
-};
+
 
 const sendToAdd = (amount) => {
     totalCost.push(amount);
