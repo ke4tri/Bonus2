@@ -1,15 +1,23 @@
 import {add} from '../Helpers/util.js';
 import {choices, totalCost} from '../Components/sandComponents.js'
 
+let changeCost =(cost) => {
+    console.log(totalCost);
+};
+
 const sendToAdd = (amount) => {
     totalCost.push(amount);
     console.log(totalCost);
 };
 
 const sendToRem = (amount) => {
-    totalCost.pop(amount);
-    console.log(totalCost);
-};
+    for(var i = totalCost.length - 1; i >= 0; i--) {
+        if(totalCost[i] === amount) {
+           delete totalCost[i];
+           console.log(totalCost);
+        }
+        }
+    };
 
 let button1 = document.querySelector("input[name=customRadio1]");
 let setCheck1;
@@ -41,7 +49,7 @@ let setCheck2;
         }else{
             this.checked = false;
             setCheck2 = null;
-            let itemcost = `${choices[0].wh}`
+            let itemcost = `${choices[0].wheat}`
             sendToRem(itemcost);
             console.log("This is total price " + itemcost)
     };
