@@ -34,7 +34,7 @@ let setCheck5;
             sendToRem(itemcost);
             console.log("This is total price " + itemcost)
     };
-}
+};
 
 let button6 = document.querySelector("input[name=customRadio6]");
 let setCheck6;
@@ -52,4 +52,4 @@ let setCheck6;
             sendToRem(itemcost);
             console.log("This is total price " + itemcost)
     };
-}
+};

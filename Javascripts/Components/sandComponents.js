@@ -10,7 +10,6 @@ const setCharacters = (newArray) => {
   console.log(newArray);
   };
 
-// move this to the helper file for adding all numbers in the array
   function addArrayOfNumbers(arrayOfNums){
     var sum = 0;
     for (var i = arrayOfNums.length; !!i--;){
@@ -19,15 +18,14 @@ const setCharacters = (newArray) => {
     }
     printToDom(sum, "printSandAndPrice")
   };
-  // put this in a js file of its own
-document.getElementById("priceButton").addEventListener("click", function(){
+
+  document.getElementById("priceButton").addEventListener("click", function(){
   let priceArray = [];
   for(let i=0;i<totalCost.length;i++){
     priceArray.push(Number(totalCost[i]))
   }
   console.log(priceArray);
   addArrayOfNumbers(priceArray)
-
 });
 
   export{setCharacters, totalCost, choices}
