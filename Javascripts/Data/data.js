@@ -3,7 +3,6 @@ import {setCharacters} from '../Components/sandComponents.js'
 function executeThisCodeAfterFileLoaded () {
     const data = JSON.parse(this.responseText); 
     setCharacters(data.choices);
-    // detailsBuilder(getpetz());
 }
 
 function executeThisCodeIfXhrFails () {
