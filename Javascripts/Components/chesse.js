@@ -1,7 +1,6 @@
 import {choices, totalCost} from '../Components/sandComponents.js'
 
 let changeCost =(cost) => {
-    console.log(totalCost);
 };
 
 const sendToAdd = (amount) => {
@@ -13,7 +12,6 @@ const sendToRem = (amount) => {
     for(var i = totalCost.length - 1; i >= 0; i--) {
         if(totalCost[i] === amount) {
            delete totalCost[i];
-           console.log(totalCost);
         }
         }
     };
@@ -25,14 +23,12 @@ let setCheck3;
         if(setCheck3 != this){
              setCheck3 = this;
              let itemcost = `${choices[1].cheddar}`
-             console.log("This is the prices " + itemcost )
              sendToAdd(itemcost);
         }else{
             this.checked = false;
             setCheck3 = null;
             let itemcost = `${choices[1].cheddar}`
             sendToRem(itemcost);
-            console.log("This is total price " + itemcost)
     };
 }
 
@@ -43,13 +39,11 @@ let setCheck4;
         if(setCheck4 != this){
              setCheck4 = this;
              let itemcost = `${choices[1].bleu}`
-             console.log("This is the prices " + itemcost )
              sendToAdd(itemcost);
         }else{
             this.checked = false;
             setCheck4 = null;
             let itemcost = `${choices[1].bleu}`
             sendToRem(itemcost);
-            console.log("This is total price " + itemcost)
     };
 }
